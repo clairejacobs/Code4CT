@@ -1,0 +1,90 @@
+ $initialColor1: #BAF770;
+ $mainHeight: 200px;
+ $mainWidth: 200px;
+ $mainFloat: left;
+
+ .box1 {
+   height: $mainHeight;
+   width: $mainWidth;
+   background-color: $initialColor1;
+   float: $mainFloat;
+ }
+
+ $initialColor2: #F77A70;
+
+ .box2 {
+   height: $mainHeight;
+   width: $mainWidth;
+   background-color: $initialColor2;
+   float: $mainFloat;
+ }
+
+ $initialColor3: #F7B570;
+
+ .box3 {
+   height: $mainHeight;
+   width: $mainWidth;
+   background-color: $initialColor3;
+   float: $mainFloat;
+   web-kit-transition: width 2s;
+   transition: width 2s;
+ }
+
+$initialColor4: #F7F370;
+
+.box4 {
+  height: $mainHeight;
+  width: $mainWidth;
+  background-color: $initialColor4;
+  float: $mainFloat;
+  web-kit-transition: width 2s;
+  transition: width 2s;
+}
+
+$hoverColor1: #E191F5;
+
+.box1:hover {
+  background-color: $hoverColor1;
+}
+
+$hoverColor2: #5D9CFA;
+
+.box2:hover {
+  background-color: $hoverColor2;
+}
+
+$hoverColor3: #ECF532;
+
+.box3:hover {
+  background-color: $hoverColor3;
+}
+
+$hoverColor4: #DD3D30;
+
+.box4:hover {
+  background-color: $hoverColor4;
+}
+
+$activeColor1: #65DF33;
+
+.box1:active {
+  background-color: $activeColor1;
+}
+
+$activeColor2: #AB33DF;
+
+.box2:active {
+  background-color: $activeColor2;
+}
+
+$activeColor3: #F78709;
+
+.box3:active {
+  background-color: $activeColor3;
+}
+
+$activeColor4: #5D70F2;
+
+.box4:active {
+  background-color: $activeColor4
+}

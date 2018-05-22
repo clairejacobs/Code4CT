@@ -1,0 +1,53 @@
+.box1 {
+  height: 200px;
+  width: 200px;
+  background-color: #BAF770;
+  float: left; }
+
+.box2 {
+  height: 200px;
+  width: 200px;
+  background-color: #F77A70;
+  float: left; }
+
+.box3 {
+  height: 200px;
+  width: 200px;
+  background-color: #F7B570;
+  float: left;
+  web-kit-transition: width 2s;
+  transition: width 2s; }
+
+.box4 {
+  height: 200px;
+  width: 200px;
+  background-color: #F7F370;
+  float: left;
+  web-kit-transition: width 2s;
+  transition: width 2s; }
+
+.box1:hover {
+  background-color: #E191F5; }
+
+.box2:hover {
+  background-color: #5D9CFA; }
+
+.box3:hover {
+  background-color: #ECF532; }
+
+.box4:hover {
+  background-color: #DD3D30; }
+
+.box1:active {
+  background-color: #65DF33; }
+
+.box2:active {
+  background-color: #AB33DF; }
+
+.box3:active {
+  background-color: #F78709; }
+
+.box4:active {
+  background-color: #5D70F2; }
+
+/*# sourceMappingURL=styles.css.map */

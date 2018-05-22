@@ -1,0 +1,11 @@
+ $mainFont: 'Montserrat', sans-serif;
+ $mainBackground: #8D8887;
+ $fontSize: 20px;
+ $fontColor: #E3EF05;
+
+ body {
+   font-family: $mainFont;
+   background-color: $mainBackground;
+   font-size: $fontSize;
+   color: $fontColor;
+ }
