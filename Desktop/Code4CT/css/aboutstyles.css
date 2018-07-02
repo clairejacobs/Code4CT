@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif; }
+
+#pageContainer {
+  display: grids;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+/*declaring what column my nav bar will be in and the position*/
+.mainNav {
+  grid-column: 1/9;
+  background-color: white;
+  color: pink;
+  height: 80px;
+  position: sticky;
+  z-index: 5;
+  top: 0; }
+
+/*styling the links in my nav bar*/
+.mainNav a {
+  float: left;
+  display: block;
+  color: pink;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 50px; }
+
+/*when hover the color will change*/
+.mainNav a:hover {
+  background-color: #ddd;
+  color: pink; }
+
+.active {
+  background-color: pink;
+  color: white;
+  padding: 0;
+  height: 50px; }
+
+/*styling the logo*/
+.active img {
+  height: 50px; }
+
+/*stating that the hamburger icon will not be shown on desktop view*/
+.mainNav .icon {
+  display: none; }
+
+/* Dropdown button */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 78px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.searchBar {
+  display: inline;
+  float: right;
+  position: relative;
+  top: 30px; }
+
+header {
+  grid-column: 1/9;
+  grid-row: 2/4;
+  text-align: center;
+  background-color: #C1BBAF; }
+
+section {
+  grid-column: 1/9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px; }
+  section .column1 {
+    grid-column: 1/2; }
+  section #column1Button {
+    margin-left: 100px;
+    background-color: #ffb3b3;
+    border-color: #ffb3b3; }
+  section .column2 img {
+    width: 100%; }
+
+.section2 {
+  grid-column: 1/9;
+  display: grids;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px; }
+  .section2 img {
+    width: 100%; }
+  .section2 .sectionImg {
+    grid-column: 1/2; }
+
+#subGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 10px; }
+  #subGrid .subGrid1 {
+    grid-column: 1/2; }
+
+.teamSection {
+  grid-column: 1/9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto; }
+  .teamSection div img {
+    margin: 0 0;
+    float: left;
+    width: 50%; }
+
+.teamHead {
+  grid-column: 1/3; }
+  .teamHead h5, .teamHead p {
+    float: right; }
+
+.timer {
+  grid-column: 1/9;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 50px;
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  padding-left: 80px;
+  color: white; }
+
+/*class circle width,margin,display,position,and text-align*/
+.circle {
+  width: 100%;
+  margin: 6px 20px 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center; }
+
+/*class timer div width,height,padding-top*/
+.timer div {
+  width: 150px;
+  height: 150px;
+  padding-top: 50px; }
+
+.fa-paper-plane {
+  color: #ffb3b3; }
+
+div#subcribe {
+  grid-column: 1/7; }
+  div#subcribe h2 {
+    text-align: center; }
+  div#subcribe p {
+    text-align: center; }
+  div#subcribe .input {
+    text-align: center; }
+    div#subcribe .input input {
+      border-color: #ffb3b3; }
+  div#subcribe .submit {
+    background-color: #ffb3b3;
+    border-color: #ffb3b3; }
+
+#carousel {
+  grid-column: 1/9;
+  background-color: black;
+  overflow: hidden; }
+  #carousel .subCarousel {
+    width: 5880px;
+    animation-name: carousel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    left: 100%; }
+    #carousel .subCarousel img {
+      display: inline;
+      height: 180px; }
+
+@keyframes carousel {
+  100% {
+    position: relative;
+    left: -2880px; } }
+footer {
+  grid-column: 1/9;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px; }
+  footer .supportHelp {
+    grid-column: 3/4; }
+  footer .copyright {
+    grid-column: 1/9;
+    background-color: #ffb3b3; }
+    footer .copyright h3 {
+      float: right; }
+    footer .copyright .fab {
+      float: right; }
+
+@media screen and (max-width: 600px) {
+  #pageContainer {
+    display: grids;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(32, auto);
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
+  .mainNav {
+    grid-column: 1/2; }
+
+  .timer {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 50px;
+    width: 100%;
+    height: 1064px;
+    background-color: black;
+    padding: 0;
+    color: white; }
+
+  .circle {
+    margin: 0 auto; }
+
+  section {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px; }
+    section h2 {
+      text-align: center; }
+    section #column1Button {
+      text-align: center; }
+
+  .section2 {
+    grid-column: 1/2;
+    display: grids;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px; }
+
+  .teamSection {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto); }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px; }
+
+  .copyright {
+    background-color: pink; }
+
+  .legalSection {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+
+  .companyInfo {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+
+  .supportHelp {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+
+  .dropdown {
+    display: none; }
+
+  .mainNav a:not(:first-child) {
+    display: none; }
+
+  .mainNav a.icon {
+    float: right;
+    display: block; }
+
+  .mainNav.responsive {
+    position: relative; }
+
+  .mainNav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+  .mainNav.responsive a {
+    background-color: grey;
+    float: none;
+    display: block;
+    text-align: center; }
+
+  .mainNav.responsive .dropdown {
+    display: block; }
+
+  .dropdown-content {
+    width: 100%;
+    margin-right: 10px; } }
+
+/*# sourceMappingURL=aboutstyles.css.map */
